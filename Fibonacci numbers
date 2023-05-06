@@ -1,0 +1,19 @@
+n_terms = int(input("Enter the number of terms: "))
+
+# initialize the first two terms of the sequence
+a, b = 0, 1
+
+# check if the number of terms is valid
+if n_terms <= 0:
+    print("Please enter a positive integer.")
+elif n_terms == 1:
+    print("Fibonacci sequence up to", n_terms, ":")
+    print(a)
+else:
+    print("Fibonacci sequence up to", n_terms, ":")
+    for i in range(n_terms):
+        print(a, end=' ')
+        c = a + b
+        # update values for the next iteration
+        a = b
+        b = c
