@@ -1,0 +1,5 @@
+print("Area of the Circle")
+rds = float(input("Input the radius of the circle :"))
+pi = 3.14159265359;
+area = pi*rds*rds;
+print("The area of the circle with radius",rds,"is :", area)
